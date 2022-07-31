@@ -1,0 +1,183 @@
+.navigator{
+  height:80px;
+  text-align: right;
+}
+.nav-menu{
+  position: relative;
+  right:5%;
+  top:40%;
+}
+.nav-items{
+
+    margin:10px;
+}
+.nav-item-links:link{
+    text-decoration: none;
+    color:#019267;
+}
+.nav-item-links:hover{
+    color:#E4F9F5;
+    border: 5px solid #019267;
+    border-radius: 5px;
+    background-color: #019267;
+
+}
+
+
+
+.top-container{
+  background-color: #E4F9F5;
+  /*height:200px;
+  width:200px;
+  border: solid red;
+  /* sets border to solid red or without color to default black */
+  border-width:0 10px 20px 30px;
+  /* sets width of border in a circle/clockwise direction from top to right to bottom to left */
+  /* padding gives extra padding all around the content, so width/height of the content is unaffected but extra padding is given around the content in the element*/
+  margin-bottom:10px;
+  /* margin is used to seperate or give space between each html elements, again we can make use of top/bottom/left/right or use the circle/clockwise notation like the other box-model parameters*/
+  /*position:relative;*/
+  position: relative;
+  /*The position of the parent element has to be set to relative to have its children elements have an absolute position relative to itself else the children element will have an absolute position relative to the whole body*/
+  padding-top: 100px;
+}
+/* HTML elements follow a box-model approach to structure/style themselves on the website.
+  So the box model has different components. it starts at the center with content with some height & width.
+  Surrounding the content is the padding, surrounding it is border and surrounding which is margin.
+  The padding essentially includes the background color and the background image, so these two things wont be altered.
+  Only the overall width and height is altered in addition to the height & width set by us  */
+
+.middle-container-1{
+  /*
+  background-color: red;
+  height:200px;
+  width:200px;
+  */
+  padding-top: 100px;
+}
+.middle-container-2{
+
+  padding-top: 80px;
+}
+.middle-container-3{
+
+  padding-top: 80px;
+}
+.bottom-container{
+  /*
+  background-color: blue;
+  height:200px;
+  width:200px;*/
+
+ padding-top: 150px;
+ padding-bottom:50px;
+}
+.text-style{
+  font-family: "Merriweather", serif;
+  color:grey;
+}
+.iframe{
+  padding: 5px;
+  border: 3px solid #019267;
+  border-radius: 5px;
+}
+body{
+  margin: 0;
+  text-align: center;
+  /*This property/rule is used to set the alignment in the body to center or other alignments*/
+ font-family: "Merriweather", serif;
+ /*Pulled from the google fonts*/
+   /*
+  font-family: cursive; -- handwritten appearance
+  font-family: fantasy; -- Avatar movie kinda font
+  font-family: monospace; -- gives equal space between all chaarcters, font family used for coding, as here in atom
+  font-family: sans-serif; -- appearance which has no serifs(kinda edges, like Times Roman font), ex of this font is Arial
+  font-family: serif; -- appearance which has serifs(kinda edges, like Times Roman font)
+  font-family: Verdana, sans-serif; -- makes use of the specific font Verdona under sans-serif family type or as a fallback font uses whatever sans-serif installed on the user's comp
+
+  We have no idea what fonts are installed on a user's computer and if we want to render our web app a certain way and want users to view it the same way, then to be safe, we can make use of web safe fonts, but again although majority have it on their systems, a very few might not
+  font-family: "Times New Roman", Times, serif;
+  So here, The browser will try the first one, if that one isn't available the second, and so forth. In the end it uses the family serif, so the browser chooses any serif font.
+
+  Best way to ensure everyone has the same view irrespective what font families they've installed on their system is to make use of Embedded fonts.
+
+  */
+}
+h1{
+  margin-top: 0;
+  /*
+  width: 15%;
+  /* But if we set width of a child element in the parent elemnet whose alignemnt is set to center then that corresponding child element won't be center aligned
+  margin: 0 auto;
+  /* To counter that problem we can make that child element center aligned either vertically or horizontally... to make it vertically centered need to have margins set to auto on top & bottom
+  and 0 on the sides (margin: auto 0 auto 0)... to make it horizontally centered need to have margins ste to auto on the sides and 0 on top & bottom (margin: 0 auto 0 auto)
+  */
+  color:#019267;
+  font-family: "Sacramento",cursive;
+}
+h2{
+  color:#019267;
+  font-family: "Sacramento",cursive;
+  font-size: 20px;
+}
+h3,h4{
+  font-family: "Montserrat",sans-serif;
+}
+h5{
+  color:#E4F9F5;
+  font-family: "Montserrat",sans-serif;
+}
+p{
+  color:grey;
+}
+hr{
+  margin-top: 100px;
+  /* This section styles all the horizontal lines*/
+  border-style: dotted none none;
+  /*Here we are telling the border style will be dotted for the top part, none for the sides, none for bottom, so only one line of design will be there
+  Alternatively we can set it as,
+  border-style: dotted none none none; which will apply for each side of the borders
+  or
+  border-style:none;
+  border-top-style: dotted;
+  */
+  border-color: #000000;  /*This line is included just to avoid csslint warning, Fallback border-color (hex or RGB) should precede RGBA border-color.*/
+  border-color: #019267;
+  /*This sets the border color, color value can be name/hexcode/rgb/hsl values*/
+  border-width:8px;
+  /*This will be the border size basically, how thick the border will be*/
+  height:0;
+  /*The space/height inside the box that the border draws has been set to 0. The box is inside the top-left-right-bottom borders*/
+  width: 3%;
+  /*This is how much length/width of border we wnat to be drawn on our page. Can be pixels or percentage of the screen width, which will render it flexible for different screen sizes*/
+}
+/*The margin:0 or margin-top:0 is used to style those components to have a 0 pixels on margins.
+This is done to override the user agent stylesheet or the stylesheet that the browser adds to
+certain HTML elements while rendering our page. This action can be seen on chrome developer tools
+under ELements and styles section and how our CSS style would override the user agent stylesheet.
+*/
+.underline{
+  text-decoration: underline;
+}
+
+.top-cloud{
+  position:absolute;
+  /*right:600px;
+  top:50px;*/
+  right:10%;
+  top:10%;
+  /*The position of the top & bottom clouds have been set to absolute type or in other words relative to its parent element by setting the parent element's position to relative */
+}
+.bottom-cloud{
+  position:absolute;
+  /* left:630px;
+  bottom:300px; */
+  left:10%;
+  bottom:60%;
+
+}
+.footer{
+  text-align: center;
+  background-color:#019267;
+  padding:10px;
+}

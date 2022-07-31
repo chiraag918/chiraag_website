@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Chiraag A</title>
+  <link rel="stylesheet" href="CSS/styles.css">
+  <link rel="icon" href="favicon.ico">
+  <!-- link tag with attribute rel="icon" is used to add individual icons on the tab of our page -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
+  <!--  We can embedd fonts onto our webpage by linking it with google fonts which will help the fonts to be pulled down from google incase a particular user hasn't installed it on their system.-->
+</head>
+
+<body>
+  <div class="navigator">
+
+      <div class="nav-menu">
+        <span class="nav-items"><a class="nav-item-links" href="#About">About</a></span>
+        <span class="nav-items"><a class="nav-item-links" href="#Skills">Skills</a></span>
+        <span class="nav-items"><a class="nav-item-links" href="#Projects">Projects</a></span>
+        <span class="nav-items"><a class="nav-item-links" href="#Contact">Contact</a></span>
+      </div>
+
+
+
+
+
+
+  </div>
+
+  <div class="top-container">
+    <img src="images/cloud.png" alt="cloud-img" class="top-cloud">
+    <h1>I'm Chiraag.</h1>
+    <p>a web developer.</p>
+    <!-- Span is an inline element as opposed to paragraph element which is a block element.
+    So in the above case we wanted to only underline the web word and we could've tried by dividing
+    the three words into three seperate paragraph elements but then that would render that on
+    seperate lines since paragraph element is a block element. To solve this issue we can make use of span, which
+    is an inline element to specifically target a word and style it accordingly. span occupies as much space as its
+    content which is eveident from the developer tools. span is also like div element which only shpws its effect along with CSS.
+  -->
+    <!--Common Inline elements - <span>, <img>, <a> (anchor tag)
+  Common block elements - <p>, <h1>, <div>, <ol>, <ul>, <li>, <form>
+-->
+    <img src="images/cloud.png" alt="cloud-img" class="bottom-cloud">
+    <img src="images/mountain.png" alt="mountain-img">
+  </div>
+  <a name="About">
+  <div class="middle-container-1">
+    <center>
+
+    <table cellspacing=50>
+      <tr >
+        <td>
+          <img src="https://drive.google.com/uc?export=view&id=1gt7Dmg5_wPc3xdzVCa07G28s3_HruPQo" alt="Chiraag's profile pic" width="180" height="180">
+          <!-- img tag, src can be either url of a pic or pic file name, alt atribute is used to display the alternate text if the browser is incable of trying
+          to load the image in a particular format, width & height attributes resize the image.
+
+          To include images from google drive:
+          Original URL: https://drive.google.com/file/d/0B6wwyazyzml-OGQ3VUo0Z2thdmc/view
+
+          You need to copy the ID from the original URL (the characters between the /d/ and /view), and use it in this URL:
+
+          https://drive.google.com/uc?export=view&id=0B6wwyazyzml-OGQ3VUo0Z2thdmc
+          -->
+        </td>
+        <td style="padding-left: 50px">
+          <h1>Hello</h1>
+          <p>I am a  <bold><em>web developer &nbsp</em></bold>  based in Bangalore, India</p>
+
+          <p>Aspire to design and develop <bold><em>innovative  &nbsp</em></bold> user interfaces</p>
+        </td>
+      </tr>
+    </table>
+
+    </center>
+  </div>
+  </a>
+
+  <hr>
+
+  <a name="Skills">
+  <div class="middle-container-2">
+    <center>
+
+    <table cellspacing=50>
+      <tr >
+        <td style="padding-left: 80px">
+        <h1>Skills</h1>
+        </td>
+      </tr>
+      <tr>
+        <td style="padding-top: 30px">
+          <table>
+            <tr>
+              <td>
+                <img src="https://drive.google.com/uc?export=view&id=1XhQ4n-b0g9_LO9pPf-Gd-V-7Tgl7Wfq7" alt="HTML logo" width="290px" height="150px">
+              </td>
+              <td>
+                <img src="https://drive.google.com/uc?export=view&id=1Q6GmiIuNPh3gi5OAeExOfgVk8Vhaux-8" alt="CSS logo" width="130px" height="150px">
+              </td>
+              <td>
+                <img src="https://drive.google.com/uc?export=view&id=1ea8g6manFxroGHyyvaPII5ab5X3XRYir" alt="React logo" width="230px" height="150px">
+              </td>
+              <td>
+                <img src="https://drive.google.com/uc?export=view&id=17PBgMyUKV5n5T2kTFwZMZ6Ulp6x6ik5g" alt="Material UI logo" width="160px" height="150px">
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+
+    </center>
+  </div>
+  </a>
+
+  <hr>
+
+  <a name="Projects">
+  <div class="middle-container-3">
+    <center>
+
+    <table >
+      <tr>
+        <td style="text-align:center;">
+          <table>
+            <tr>
+              <td>
+                <img src="https://drive.google.com/uc?export=view&id=1RDMI_wrU5CWwqLqiAUb2nZVfLTfgvutS" alt="HTML logo" width="400px" height="300px">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h1>Work in progress</h1>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+
+    </center>
+  </div>
+  </a>
+
+  <hr>
+
+ <a name="Contact">
+  <div class="bottom-container">
+    <iframe frameborder="1" width="500" height="300" src="Contact.html" class="iframe" name="contactiframe">
+    </iframe>
+
+  </div>
+  </a>
+  <!-- The content divider element is used to divide componenets/contents on our webpage
+  and helps us structure/style differnet componenets different from one another. It works
+  with CSS else has no effect and seems like normal HTML.
+-->
+<div class="footer">
+  <h5>&copy Chiraag A. All rights reserved.</h5>
+</div>
+
+</body>
+
+</html>
